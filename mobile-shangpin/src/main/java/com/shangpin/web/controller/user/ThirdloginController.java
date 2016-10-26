@@ -66,76 +66,7 @@ public class ThirdloginController extends BaseController{
      */
     @RequestMapping(value = "/qqlogin")
     public String thirdQQLogin(String code ,String state,HttpServletRequest request,ModelMap model) {
-        String uuid;
-        if(state!=null){
-            uuid = state;
-        }else{
-            uuid = UUID.randomUUID().toString();
-        }
-        String qq_back_url = userService.getShangpinDomain()+"thirdLogin/qqlogin";
-        if(StringUtils.isBlank(code)){
-            //用户未登录状态，拼装参数去登录
-            return "redirect:https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id="+QQ_APPID+"&state="+uuid+"&g_ut=1&which=ConfirmPage&redirect_uri="+qq_back_url;
-        }
-        //获取Access Token
-        String accessUrl = "https://graph.qq.com/oauth2.0/token?grant_type=authorization_code&client_id="+QQ_APPID+"&client_secret="+QQ_APP_ACCESS_KEY+"&code="+code+"&redirect_uri="+qq_back_url;
-        String accessData = HttpClientUtil.doGet(accessUrl);
-        String access_token=null;
-        String expires_in=null;
-        if(StringUtils.isNotBlank(accessData) && accessData.length()>0){
-            String[] accesss = accessData.trim().split("&");
-            if(accesss.length>0){
-                for (String access : accesss) {
-                    String[] k_v = access.split("=");
-                    if(k_v.length==2){
-                        switch (k_v[0].trim()){
-                            case "access_token":
-                                access_token = k_v[1];break;
-                            case "expires_in":
-                                expires_in = k_v[1];break;
-//                            case "refresh_token":
-//                                refresh_token = k_v[1];break;
-                        }
-                    }
-                }
-            }
-        }
-        if(access_token==null || expires_in ==null){
-            logger.info("获取qq的accesstoken失败，返回值{}",accessData);
-            return null;
-        }
-        //拿到用户的qq号
-        String qq_url="https://graph.qq.com/oauth2.0/me?access_token="+access_token;
-        String qq_num = HttpClientUtil.doGet(qq_url);
-        if(qq_num!=null){
-            qq_num = qq_num.replace("callback(","").replace(")","").replace("\n","").replace(";","");
-        }
-        JSONObject qqnum_obj = JSONObject.fromObject(qq_num);
-        String openid = qqnum_obj.getString("openid");
-        if(openid==null){
-            logger.info("获取qq用户info信息失败,返回值：{}",qqnum_obj);
-            return null;
-        }
-        //获取用户信息
-        String user_info_url="https://graph.qq.com/user/get_user_info?access_token="+access_token+"&oauth_consumer_key="+QQ_APPID+"&openid="+openid;
-        String qq_info_data = HttpClientUtil.doGet(user_info_url);
-        JSONObject info_obj = JSONObject.fromObject(qq_info_data);
-        String nickName = info_obj.getString("nickname");
-        String qq_gender = info_obj.getString("gender");
-        String gender;
-        if("男".equals(qq_gender)){
-            gender="1";
-        }else if ("女".equals(qq_gender)){
-            gender="0";
-        }else {
-            gender ="2";
-        }
-       // String user_icon = info_obj.getString("figureurl");//头像 暂时未使用  剩余可选值figureurl_1，figureurl_2，figureurl_qq_1，figureurl_qq_2
-        //调用登录
-        String login_data = userService.thirdLogin(MODE_QQ, null, openid, gender, nickName, null);
-        //登录成功,检测是否绑定手机号
-        model.put("type_num",MODE_QQ);
-        return loginToSession(login_data,request,MODE_QQ);
+        return null;
     }
 
 
