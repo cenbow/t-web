@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+.scene_10 .e {
+    width: 790px;
+    height: 1244px;
+    left: -22px;
+    top: -1244px;
+}
+.scene_13 .c{
+	position:absolute;
+	left:0;
+	top:-1400px;
+}
+.scene_16 .z{
+	position:absolute;
+	left:-1400px;
+	top:0;
+}
+.scene_15 .f{
+	left:-800px;
+}
+.scene_15 .d{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+	background: url(../image/page1/14_a.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: 0px 0px;
+}
+.scene_02 .a{
+	background: url(../image/page1/4_e.png) left top no-repeat;
+	background-size: 500px 217px;
+	background-position: 0px 0px;
+}
+.scene_02 .b{
+	background: url(../image/page1/4_h.png) left top no-repeat;
+	background-size:80% 50%;
+	background-position: 0px 0px;
+}
+.scene_02 .c{
+	background: url(../image/page1/6_c.png) left top no-repeat;
+	background-size: 410px 186px;
+	background-position: 0px 0px;
+}
+.scene_02 .a, .scene_02 .b, .scene_02 .c{
+	width: 700px;
+	height: 610px;
+	left: 48px;
+	top: 1324px;
+	z-index: 4;
+
+}
+.scene_14 .a{
+	background: url(../image/page1/12_c.png) left top no-repeat;
+	background-size: 500px 206px;
+	background-position: 0px 614px;
+}
+.scene_14 .c{
+	background: url(../image/page1/12_d.png) left top no-repeat;
+	background-size: 91% 66%;
+	background-position: 0px 0px;
+	width: 582px;
+	height: 321px;
+	left: 768px;
+	top:882px;
+}
+
+.scene_14 .a, .scene_14 .c{
+	/*width: 700px;
+	height: 610px;*/
+	/*left: 48px;
+	top: 724px;*/
+	z-index: 10;
+
+}
+.scene_10 .a{
+	background: url(../image/page1/2_f.png) left top no-repeat;
+	background-size: 56% 23%;
+	background-position:13px 401px;
+}
+.scene_10 .c{
+	background: url(../image/page1/2_g.png) left top no-repeat;
+	background-size: 100% 82%;
+	background-position: 0px 0px;
+	width: 582px;
+	height: 321px;
+	left: 63px;
+	top:980px;
+}
+
+.scene_10 .a, .scene_10 .c{
+	/*width: 700px;
+	height: 610px;*/
+	/*left: 48px;
+	top: 724px;*/
+	z-index: 10;
+
+}
+.scene_10 .c{
+	top: 1260px;
+}
+.scene_16 .b{
+	background: url(../image/page1/16_b.png) left top no-repeat;
+	background-size: 100% 65%;
+	background-position: 0px 0px;
+	width: 582px;
+	height: 321px;
+	left: -32px;
+	top:400px;
+}
+
+.scene_16 .b{
+	/*width: 700px;
+	height: 610px;*/
+	/*left: 48px;
+	top: 724px;*/
+	z-index: 10;
+
+}
+.scene_16 .b{
+	left: -472px;
+}
+.scene_15 .b{
+	background: url(../image/page1/16_b.png) left top no-repeat;
+	background-size: 110% 94%;
+	background-position: 0px 0px;
+	width: 582px;
+	height: 321px;
+	left: -472px;
+	top:705px;
+	z-index: 10;
+}
+.scene_15 .e{
+	background: url(../image/page1/13_a.png) left top no-repeat;
+	background-size: 100% 76%;
+	width:947px;
+	height: 598px;
+	left: -134px;
+	top:1200px;
+	z-index: 10;
+}
+.page_4 .logo{
+	position: absolute;
+	top: 950px;
+	left: 128px;
+	width: 500px;
+}
+
+

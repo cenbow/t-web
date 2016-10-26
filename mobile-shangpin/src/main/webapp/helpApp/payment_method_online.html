@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+<!-- 开启对web app程序的支持 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- 全屏模式浏览 -->
+<meta name="apple-touch-fullscreen" content="yes">
+<!-- 改变Safari状态栏的外观 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- 禁止自动识别5位以上数字为电话 -->
+<meta name="format-detection" content="telephone=no">
+
+<title>在线支付</title>
+<link href="../styles/shangpin/css/base.css" rel="stylesheet" />
+<link href="../styles/shangpin/css/public.css" rel="stylesheet" />
+<link href="../styles/shangpin/css/page/help_center.css" rel="stylesheet" /><!--页面专用CSS-->
+
+<script src="../styles/shangpin/js/core.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+  var ver = Math.random();
+    loader = SP.core
+      .install("../styles/shangpin/js/jquery.min.js?" + ver)  //jquery库文件
+        .using("../styles/shangpin/js/lazyload.js?" + ver)    //图片懒加载
+        .excute()
+        .using("../styles/shangpin/js/config.sim.js?" + ver)  //图片懒加载
+		.using("../styles/shangpin/js/page/help_center.js?" + ver)
+        .excute();
+      
+</script>
+</head>
+<body>
+
+  
+
+  <div class="container">
+
+    
+
+    <!-- 页面内容start -->
+    <div class="alContent">
+      <div class="problem-box">
+        <h3>银联支付</h3>
+        <p>支持银联支付的银行：</p>
+        <p>1. 信用卡：中国工商银行、中国农业银行、中国银行、中国建设银行、交通银行、招商银行、中国邮政储蓄银行、中国民生银行、中国光大银行、兴业银行、华夏银行、中信银行、北京银行、上海银行、广发银行、浦发银行</p>
+        <p>2. 借记卡：中国农业银行、中国建设银行、交通银行、光大银行、上海银行</p>
+        <p>3. 外资银行：东亚银行、花旗银行</p>
+        <p>温馨提示：</p>
+        <p>1. 农业银行借记卡的用户请使用在“个人客户基本信息”中预留的手机号码。</p>
+        <p>2. 建设银行借记卡的用户需开通手机银行或网上银行并且预留手机号码。</p>
+        <p>3. 交通银行借记卡的用户需要在个人网上银行或柜台签约开通无卡支付业务。</p>
+        <p>4. 邮政储蓄借记卡的用户需要在个人网上银行或柜台签约加办银联无卡支付业务。</p>
+        <p>5. 中信银行借记卡的用户需要在柜台签约开通无卡支付业务。</p>
+        <p>6. 兴业银行借记卡的用户请使用在“客户基本资料”中设置的手机号码。</p>
+      <div>
+    </div>
+    <!-- 页面内容end -->
+  </div>
+
+  
+</body>
+</html>

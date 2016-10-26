@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- 开启对web app程序的支持 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 全屏模式浏览 -->
+    <meta name="apple-touch-fullscreen" content="yes">
+    <!-- 改变Safari状态栏的外观 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>10.10 十全十美 PRIME金牌会员 恋（Gou) 爱（Wu)指南</title>
+    <link href="css/base.css" rel="stylesheet" />
+
+
+    <!-- icon -->
+    <!--<link rel="apple-touch-icon" href="/images/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/touch-icon-iphone4.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/touch-icon-newipad.png">-->
+    <!-- 启动自定义图片(png, 320X640) -->
+    <link rel="apple-touch-startup-image" sizes="72x72" href="../../styles/shangpin/images/loading.png">
+
+    <script type="text/javascript" charset="utf-8" src="../../styles/shangpin/js/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../styles/weixin/jweixin-1.0.0.js"></script>
+</head>
+<style>
+    .container{ min-width:320px; max-width:640px; margin:0 auto; overflow:hidden; background:#fff; }
+    a,img,button,input,textarea,li{-webkit-tap-highlight-color:rgba(255,255,255,0);}
+
+</style>
+<body>
+<div class="topFix">
+
+    <input type="hidden" name="_shareUrl"  id="_shareUrl"  value="http://m.shangpin.com/t/prime/index.html"/>
+    <input type="hidden" name="_mainTitle"  id="_mainTitle"  value="十全十美 PRIME金牌会员 恋（Gou) 爱（Wu)指南"/>
+    <input type="hidden" name="_mainDesc"  id="_mainDesc"  value="10.10会员日购物攻略"/>
+    <input type="hidden" name="_mainImgUrl" id="_mainImgUrl"  value="http://pic3.shangpin.com/e/u/16/10/08/20161008184134118997-10-10.jpg"/>
+
+    <section id="topMenu">
+        <div class="topBack">
+            <a href="javascript:history.go(-1);" class="backBtn">&nbsp;</a>
+            <span class="top-title">10.10 十全十美 PRIME金牌会员 恋（Gou) 爱（Wu)指南</span>
+            <ul class="alUser_icon clr">
+                <li><a href="../../index"><img src="../../styles/shangpin/images/home_icon.png" width="25" height="25" alt="首页"></a></li>
+                <li>
+                    <a href="../../cart/list"><img src="../../styles/shangpin/images/product/pic_newshopping.png" width="26" height="26" alt="购物车">
+                        <em id="forCartCount" style="display:block"></em>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>
+<div class="container">
+
+
+    <!--内容区域 start-->
+    <div class="conbox">
+        <img src="images/img01.jpg" />
+        <img src="images/img02.jpg" />
+        <img src="images/img03.jpg" />
+        <img src="images/img04.jpg" />
+        <img src="images/img05.jpg" />
+        <img src="images/img06.jpg" />
+        <img src="images/img07.jpg" />
+        <img src="images/img08.jpg" />
+        <img src="images/img09.jpg" />
+        <img src="images/img10.jpg" />
+        <a href="http://m.shangpin.com/meet/801"><img src="images/img11.jpg" /></a>
+    </div>
+
+</div>
+<script>
+    $(function(){
+        //如果不是微信页面直接返回
+        var localhref=location.href;
+        //把完整的url传送到后台进行签名
+        var path = "http://m.shangpin.com";
+        $.getJSON(path+"/weixin/shareUrl?shareUrl="+escape(localhref),function(data){
+            if(data!=null){
+                var configParam=new Object();
+                configParam.debug=false;
+                configParam.appId=data.appId;
+                configParam.timestamp=data.timestamp;
+                configParam.nonceStr=data.nonceStr;
+                configParam.signature=data.signature;
+                configParam.jsApiList=["onMenuShareTimeline","onMenuShareAppMessage"];
+                wx.config(configParam);
+                //微信验证成功后调用
+                wx.ready(function(){
+                    var mainDesc=$("#_mainDesc").val();
+                    var mainTitle=$("#_mainTitle").val();
+                    var mainImgUrl=$("#_mainImgUrl").val();
+                    var mainURL=localhref;
+                    //处理本地的分享图片url链接为整个访问路径
+                    var localProtocol="http:";
+                    if(mainImgUrl.indexOf(localProtocol)==-1){
+                        var localHostname=location.hostname;
+                        var localPort = location.port;
+                        if(localPort!=""){
+                            localPort=":"+localPort;
+                        }
+                        var domain= localProtocol+"//"+localHostname+localPort;
+                        mainImgUrl=domain+mainImgUrl;
+                    }
+
+                    //设置分享到朋友圈信息
+                    var menuShareTimeline=new Object();
+                    menuShareTimeline.title=mainTitle;
+                    menuShareTimeline.link=mainURL;
+                    menuShareTimeline.imgUrl=mainImgUrl;
+                    //设置发送给朋友信息
+                    var menuShareAppMessage=new Object();
+                    menuShareAppMessage.title=mainTitle;
+                    menuShareAppMessage.desc=mainDesc;
+                    menuShareAppMessage.link=mainURL;
+                    menuShareAppMessage.imgUrl=mainImgUrl;
+                    menuShareAppMessage.type="link";
+                    //分享到朋友圈
+                    wx.onMenuShareTimeline(menuShareTimeline);
+                    //发送给朋友
+                    wx.onMenuShareAppMessage(menuShareAppMessage);
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>

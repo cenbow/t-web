@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <!-- 开启对web app程序的支持 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 全屏模式浏览 -->
+    <meta name="apple-touch-fullscreen" content="yes">
+    <!-- 改变Safari状态栏的外观 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 禁止自动识别5位以上数字为电话 -->
+    <meta name="format-detection" content="telephone=no">
+
+    <title>会员说明</title>
+    <link href="../../styles/shangpin/css/base.css" rel="stylesheet" />
+    <link href="../../styles/shangpin/css/page/vip/vip2016.css?4" rel="stylesheet" /><!--页面专用CSS-->
+
+    <script src="../../styles/shangpin/js/core.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        var ver = Math.random();
+        loader = SP.core
+                .install("../../styles/shangpin/js/jquery.min.js?" + ver)  //jquery库文件
+                .using("../../styles/shangpin/js/lazyload.js?" + ver)    //图片懒加载
+                .excute()
+                .using("../../styles/shangpin/js/config.sim.js?" + ver)  //图片懒加载
+                .excute();
+
+    </script>
+	<script type="text/javascript">
+    	function checkApp(){
+    		var ua = navigator.userAgent.toLowerCase(); 
+    		var isapp=ua.indexOf('shangpin')>-1;
+    		if(isapp){
+    			try{
+    				document.getElementById("_topFixBanner").style.display='none';
+    				document.getElementById("_content").style.marginTop='0px';
+    			}catch(e){}
+    		}
+    	}
+    </script>
+</head>
+<body  onload="checkApp()">
+<div class="container">
+    <!--头部 start-->
+    <div class="topFix" id="_topFixBanner">
+        <section>
+            <div class="topBack">
+                <a href="javascript:history.go(-1);" class="backBtn">&nbsp;</a>
+                <!-- <a href="../../home" class="homeBtn"><img src="../../styles/shangpin/images/home_icon.png" width="25" height="25" alt="首页"></a> -->
+                <span class="top-title">会员说明</span>
+                <ul class="alUser_icon clr">
+	                <li>
+			            <a href="../../" ><img src="../../styles/shangpin/images/home_icon.png" width="25" height="25" alt="首页"></a>
+	                </li>
+                    <li><a href="../../user/home"><img src="../../styles/shangpin/images/user_icon.png" width="25" height="25" alt="账户"></a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!--头部 end-->
+
+    <!-- 页面内容start -->
+        <div class="content" style="margin-top:45px;">
+            
+            <div class="artical">
+                <div class="grade_introduce">
+                    会员等级制度
+                </div>
+                <div class="gradeDivide">
+                     <p class="divide"><span class="border12"></span>等级划分</p>
+                    <p class="ordinary_member">1.普通会员：近12个月内累计消费金额不足 ¥10,000；</p>
+                    <p class="vip_member">2.金牌会员：近12个月内累计消费金额达到 ¥10,000；</p>
+                </div>
+                <div class="gradeDalidity bordertop">
+                    <p class="grade_validity"><span class="border12"></span>等级有效期</p>
+                    <p class="validity_introduce">
+                         有效期为自升级之日起365天；
+                    </p>
+                    <p class="validity_care">
+                        注：退货会涉及会员等级的重新计算。
+                    </p>
+                </div>
+                <div class="gradeUpdate bordertop">
+                    <p class="grade_update"><span class="border12"></span>等级更新</p>
+                    <p class="update_introduce">每日重新计算近12个月内累计消费金额。</p>
+                    <p class="update_list1">1.达到 ¥10,000，自动升级为金牌会员；</p>
+                    <p class="update_list2">2.退货会涉及会员等级的更新；</p>
+                    <p class="update_list3">3.会员到期当日，等级自动更新。</p>
+                </div>
+                <div class="gradeUpdate bordertop marb">
+                    <p class="grade_update"><span class="border12"></span>特别提醒</p>
+                    <p class="update_introduce">尚品网会员体系更新，初始安排如下：</p>
+                    <p class="update_list1">1.普通会员，等级保持不变；</p>
+                    <p class="update_list2">2.黄金会员，剩余有效期将体验金牌会员权益；</p>
+                    <p class="update_list2">3.白金会员、钻石会员，尊享金牌会员权益，有效期为：</p>
+                    <p class="update_list2"> <span>1</span>近12个月内累计消费金额不足&yen;10,000，则有效期同原会员有效期；</p>
+					<p class="update_list2"><span>2</span>近12个月内累计消费金额达到&yen;10,000，则有效期从升级之日起365天。</p>
+                    
+                </div>
+                
+                
+                
+                <div class="grade_introduce">
+                   近12个月内累计消费金额
+                </div>
+				<div class="validityRemind">
+                    <p class="remind_introduce">累计消费金额 = 购买产生的支付商品总金额 - 退货产生的退款总金额</p>
+                    
+                    <p class="remind_list1">1.结算金额:</p>
+                    <p class="update_list2"><span>1</span>以现金、银行卡支付的金额为准；</p>
+					<p class="update_list2"><span>2</span>不包括使用优惠券、折扣码、礼品卡等金额。</p>
+                    
+                    <p class="remind_list1">2.购买产生的结算金额的计算：</p>
+                    <p class="update_list2"><span>1</span>普通会员：以确认收货满7天的订单为准；</p>
+					<p class="update_list2"><span>2</span>金牌会员：以确认收货满7天的订单为准；</p>
+                    <p class="update_list2"><span>3</span>电子礼品卡支付成功后立即纳入计算。</p>
+                                        
+                    <p class="remind_list1">3.退货产生的退款金额的计算：</p>
+                    <p class="update_list2"><span>1</span>以退货入库的商品为准；</p>
+					<p class="update_list2"><span>2</span>电子礼品卡失效后立即纳入计算。</p>
+                    
+                    <p class="remind_list1">以上规则于2016年8月26日生效。</p>
+                </div>
+            </div>
+        </div>
+    <!-- 页面内容end -->
+
+</div>
+
+
+</body>
+</html>

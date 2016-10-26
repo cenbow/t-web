@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <!-- 开启对web app程序的支持 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- 全屏模式浏览 -->
+  <meta name="apple-touch-fullscreen" content="yes">
+  <!-- 改变Safari状态栏的外观 -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- 禁止自动识别5位以上数字为电话 -->
+  <meta name="format-detection" content="telephone=no">
+
+  <title>发票说明</title>
+  <link href="../styles/shangpin/css/base.css" rel="stylesheet" />
+  <link href="../styles/shangpin/css/public.css" rel="stylesheet" />
+  <link href="../styles/shangpin/css/page/help_center.css" rel="stylesheet" /><!--页面专用CSS-->
+
+  <script src="../styles/shangpin/js/core.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    var ver = Math.random();
+    loader = SP.core
+            .install("../styles/shangpin/js/jquery.min.js?" + ver)  //jquery库文件
+            .using("../styles/shangpin/js/lazyload.js?" + ver)    //图片懒加载
+            .excute()
+            .using("../styles/shangpin/js/config.sim.js?" + ver)  //图片懒加载
+            .using("../styles/shangpin/js/page/help_center.js?" + ver)
+            .excute();
+
+  </script>
+</head>
+<body>
+<div class="container">
+  <!--头部 start-->
+  <div class="topFix">
+    <section>
+      <div class="topBack">
+        <a href="javascript:history.go(-1)" class="backBtn">&nbsp;</a>
+        <span class="top-title">发票说明</span>
+        <ul class="alUser_icon clr">
+          <li><a href="../index"><img src="../styles/shangpin/images/home_icon.png" width="25" height="25" alt="首页"></a></li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <!--头部 end-->
+
+  <!-- 页面内容start -->
+  <div class="alContent">
+    <div class="problem-box">
+      <h3 >一、发票性质</h3>
+      <p>根据中国税法及税务管理部门的要求，自2016年5月1日起全面使用电子发票，在尚品网销售的商品所开具的电子发票和纸质发票均合法有效。</p>
+      <p>
+        什么是电子发票？<br/>
+        电子发票是指在购销商品、提供或者接受服务以及从事其他经营活动中，开具、收取的以电子方式存储的收付款凭证，为真实有效的合法发票，与传统纸质发票具有同等法律效力，可作为用户维权、保修的有效凭据。
+      </p>
+      <p>如何获取电子发票？<br/>
+        在订单交易完成后可到个人中心查看电子发票，如需纸质票可自行下载打印。
+      </p>
+      <h3 >二、发票金额</h3>
+      <p>1. 发票金额不能高于订单金额。 </p>
+      <p>2. 发票金额只含现金购物金额，不包含运费、优惠券、代金券金额。</p>
+      <h3 >三、发票信息</h3>
+      <p>1. 发票抬头内容不能为空，您可选择个人、公司或您的姓名。</p>
+      <p>2. 发票内容：商品名称、箱包、饰品、钟表、化妆品、服装、鞋帽、眼镜，当您购买礼品卡时还可以选择如下发票内容：文化用品、办公用品、日用品、劳保用品、礼品。
+      </p>
+      <h3 >四、补开发票</h3>
+      <p>尚品网提供正规发票，请在订单发票信息中准确填写抬头和内容，否则我们将不能为您开具；</p>
+      <p>
+        如需补开发票，请拨打尚品网客户客服电话4006-900-900，由客服人员为您办理相关事宜。
+      </p>
+      <p>温馨提示：</p>
+      <p>尚品网会为您提供免费正规发票，请于购买商品三个月内补开，逾期将不予受理。</p>
+      <p>由客服人员为您办理补开发票事宜，补开后电子发票可到个人中心查看与下载。</p>
+      <h3 >
+        五、换开发票
+      </h3>
+      <p>若所开发票在一个月内发现因尚品网原因所致票据抬头、内容或金额错误，</p>
+      <p>请咨询在线客服或拨打客服电话4006-900-900，由客服人员为您办理换开发票事宜。</p>
+      <p>温馨提示：</p>
+      <p>
+        原发票失效后才能重新开具。
+      </p>
+    </div>
+    <!-- 页面内容end -->
+  </div>
+</body>
+</html>
