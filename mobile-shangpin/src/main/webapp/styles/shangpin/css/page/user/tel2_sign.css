@@ -1,0 +1,209 @@
+.verification_box span.pwd_eyes{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 10px;
+	right: 0;
+	background:url(../../../images/user/cssImg/eye_open.png) no-repeat left center;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+.verification_box span.pwd_eyes.close{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background:url(../../../images/user/cssImg/eye_close.png) no-repeat left center; ;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+
+fieldset .pwd_tips{
+	display: none;
+	height: 45px;
+	line-height: 45px;
+	color: #A0A0A0;
+	margin:0 4%;
+	position: relative;
+	background-color:#fff;
+	border: none;
+}
+fieldset .pwd_tips.focus{
+	display: block;
+}
+fieldset .agreement{
+	display: block;
+	height: 45px;
+	line-height: 45px;
+	color: #A0A0A0;
+	margin:0 4%;
+	position: relative;
+	background-color:#fff;
+	border: none;
+}
+fieldset .agreement span{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background:url(../../../images/user/cssImg/ok.png) no-repeat left center;
+	margin-bottom: -2px;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+fieldset .agreement span.checked{
+	background:url(../../../images/user/cssImg/no_ok.png) no-repeat left center;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+fieldset .agreement a{
+	color:#0700c6;
+	text-decoration:none;
+}
+fieldset p {
+	border-bottom:1px solid #d8d8d8;
+	height: 45px;
+	line-height: 45px;
+	color: #999;
+	margin:0 4%;
+	position: relative;
+	background-color:#fff;
+}
+fieldset p.mobiTxt{
+	color:#555;
+}
+fieldset p label {
+	display: inline-block;
+	float: left;
+	/*margin: 0 10px 0 0;*/
+	width:24px;
+	height: 24px;
+	background:url(../../../images/user/cssImg/tel.png) no-repeat left center;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+fieldset p label.mobi{
+	background:url(../../../images/user/cssImg/tel.png) no-repeat left center;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+
+fieldset p label.mobiCode{
+	background:url(../../../images/user/cssImg/check_code.png) no-repeat left center;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+
+fieldset p label.MobiPwd{
+	background:url(../../../images/user/cssImg/password.png) no-repeat left center;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+
+
+fieldset p input[type=text], fieldset p input[type=password],fieldset p input[type=number]{
+	border: 1px solid #fff;
+	background: rgba(0,0,0,0);
+	height: 24px;
+	width: 60%;
+	z-index: 0;
+	font-size:12px;
+	padding:0 5px;
+	outline:none;
+	margin-left: 30px;
+}
+fieldset input[type=text].error, fieldset input[type=password].error {
+	border: 1px solid #0700c5;
+}
+fieldset p input[type=text].verCode{
+	width:45%;
+}
+.pop_container{
+	width: 80%;
+	height: 70%;
+	max-width: 512px;
+	background: #fff;
+	color: #000;
+	position: fixed;
+	left: 50%;
+	top: 15%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	z-index: 9999;
+	font-size: 13px;
+	overflow: scroll;
+	border-top:8px solid #fff;
+}
+.pop_container h2{
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px;
+}
+
+.pop_container p{
+	font-size: 13px;
+	margin: 0 4% 10px;
+	overflow:scroll;
+}
+.pop_container p span{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.pop_container input{
+	display: block;
+	margin: 20px 4% 10px;
+	background-color: #0700c5;
+	border: 1px solid #CCCCCC;
+	outline: none;
+	color: #fff;
+	text-align: center;
+	font-size: 17px;
+	width: 92%;
+	height: 45px;
+	line-height: 45px;
+	border: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+.pop_overlay{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: scroll;
+}
+.pop{display: block}
+.close_pop{
+	width: 34px;
+	height: 34px;
+	display: block;
+	background-image:url(../../../images/user/cssImg/pop_close.png);
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	position: fixed;
+	bottom:5%;
+	left: 50%;
+	margin-left: -17px;
+
+
+}

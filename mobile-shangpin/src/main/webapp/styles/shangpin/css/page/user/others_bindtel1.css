@@ -1,0 +1,29 @@
+
+fieldset p.bind_tips{
+	text-align: center;
+	font-size: 15px;
+	color: #000;
+	border: none;
+	margin-bottom: 25px;
+}
+fieldset .pwd_tips,fieldset .agreement{display: block;height: 45px;
+	line-height: 45px;
+	color: #A0A0A0;
+	margin:0 4%;
+	position: relative;
+	background-color:#fff;}
+fieldset p {
+	border-bottom:1px solid #d8d8d8;
+	height: 45px;
+	line-height: 45px;
+	color: #999;
+	margin:0 4%;
+	position: relative;
+	background-color:#fff;
+}
+fieldset p.mobiTxt{
+	color:#555;
+}
+fieldset p input[type=text]{
+	width: 45%;
+}

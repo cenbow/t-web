@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+.rights_box{width:100%;}
+.rights_box header{width:100%; height:auto; background:#2d2d2d; text-align:center;}
+.rights_box header img{margin:10px;}
+.rights_box header p{padding:0px 0 15px; text-align:center; color:#fff; font-size:15px;}
+.rights_box dl dt{height:40px; background:#f6f6f6; color:#000; font-size:14px; line-height:40px; padding-left:10px;}
+.rights_box dl dd{background:#fff; padding:10px 10px; border-bottom:1px solid #e5e5e5;}
+.rights_box dl dd span,.rights_box dl dd em{display:block; line-height:20px;}
+.rights_box dl dd span{font-size:14px; color:#000;}
+.rights_box dl dd em{font-size:12px; color:#888;}
+
+.rights_box dl dd:last-child{border:none;}
+
+.purchase_box{width:100%; text-align:center;}
+.purchase_box img{margin:30px; width:94px; height:94px;}
+.purchase_box p{ font-size:14px; color:#000; line-height:18px;}
+.purchase_vip{display:block; margin:20px 10px; background:#0700c5; height:44px; line-height:44px; color:#fff; font-size:18px;}

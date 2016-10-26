@@ -1,0 +1,170 @@
+@charset "utf-8";
+.container {
+	min-width: 320px;
+	max-width: 640px;
+	margin: 0 auto 0;
+	font-size:12px;
+}
+
+/*用户中心首页*/
+.member_box{
+	width:100%;
+}
+.member_box header{
+	padding:25px 20px;
+	height:120px;
+	background:#2d2d2d;
+	
+}
+.member_box header .member_login{
+	width:107px; height:44px; position:relative; left:50%; margin-left:-52px; margin-top:10%; border-radius:3px; background:#fff; font-size:15px; color:#000; text-align:center; line-height:44px;
+	}
+.member_box header img{
+	position:relative;
+	width:52px;
+	height:52px;
+	border-radius:3px;
+	left:50%;
+	margin-left:-26px;
+	margin-top:5%;
+}
+.member_box header h5{
+	font-size:14px;
+	color:#fff;
+	line-height:24px;
+	font-weight:normal;
+	text-align:center;
+	margin-top:5px;
+}
+.member_box header p{
+	width:78px; height:20px; line-height:20px; border-radius:18px; background:#0700c5; margin:5px auto; font-size:10px;
+	color:#fff;
+	line-height:20px;
+	text-align:center;
+}
+.member_box header p i{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	vertical-align:middle;
+	background-repeat:no-repeat;
+	background-position:0 0;
+	background-size:16px;
+}
+.member_box header p i.normal{
+	background-image:url(../../images/member/user_normal.png);
+}
+.member_box header p i.gold{
+	background-image:url(../../images/member/user_gold.png);
+}
+.member_box header p i.platinum{
+	background-image:url(../../images/member/user_platinum.png);
+}
+.member_box header p i.diamond{
+	background-image:url(../../images/member/user_diamond.png);
+}
+
+.member_box nav{
+	width:100%;
+	box-sizing:border-box;
+	display:-webkit-box;
+	padding:20px 0 12px;
+	border-bottom:1px solid #e8e8e8;
+	background-color:#f7f7f7;
+}
+.member_box nav a{
+	display: block;
+	-webkit-box-flex:1;
+	font-size:12px;
+	color:#666;
+	text-align:center;
+	position:relative;
+	border-right:1px solid #e8e8e8;
+}
+.member_box nav a:last-child{
+	border-right:none;
+}
+.member_box nav a i{
+	display:block;
+	padding:0 30px 10px;
+}
+.member_box nav a b{
+	position:absolute;
+	right:30px;
+	top:-5px;
+	width:20px;
+	height:20px;
+	line-height:20px;
+	overflow:hidden;
+	background-color:#fff;
+	border:1px solid #0700c5;
+	border-radius:10px;
+	color:#0700c5;
+	font-size:12px;
+	font-weight:normal;
+	text-align:center;
+}
+
+.member_box .menu{
+	width:100%;
+	background-color:#f7f7f7;
+	padding-bottom:10px;
+}
+.menu li{
+	width:100%;
+	background:/*url(/images/member/menu_dot.png) no-repeat 95% center */#fff;
+	background-size:16px;
+	border-bottom:1px solid #e8e8e8;
+}
+.menu li.line{
+	margin-top:10px;
+	border-top:1px solid #e8e8e8;
+}
+.menu li a{
+	width:100%;
+	display:block;
+	height:44px;
+	line-height:44px;
+	font-size:14px;
+	color:#666;
+	padding-left:44px;
+	background-size:21px;
+	background-repeat:no-repeat;
+	background-position:15px center;
+}
+.menu li a.favorPorduct{
+	background-image:url(../../images/member/menu_icon001.png);
+}
+.menu li a.order{
+	background-image:url(../../images/member/menu_icon002.png);
+}
+.menu li a.service{
+	background-image:url(../../images/member/menu_icon003.png);
+}
+.menu li a.coupon{
+	background-image:url(../../images/member/menu_icon004.png);
+}
+.menu li a.message{
+	background-image:url(../../images/member/menu_icon005.png);
+}
+.menu li a.set{
+	background-image:url(../../images/member/menu_icon006.png);
+}
+
+
+.menu li a.favorBrand{
+	background-image:url(../../images/member/menu_icon003.png);
+}
+.menu li a.addr{
+	background-image:url(../../images/member/menu_icon005.png);
+}
+.menu li a.change{
+	background-image:url(../../images/member/menu_icon006.png);
+}
+.menu li a.help{
+	background-image:url(../../images/member/menu_icon07.png);
+}
+
+
+
+/*用户中心首页end*/

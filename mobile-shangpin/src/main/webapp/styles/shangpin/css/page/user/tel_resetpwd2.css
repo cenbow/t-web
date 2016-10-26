@@ -1,0 +1,114 @@
+.verification_box span.pwd_eyes{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 10px;
+	right: 0;
+	background:url(../../../images/user/cssImg/eye_open.png) no-repeat left center;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+.verification_box span.pwd_eyes.close{
+	background:url(../../../images/user/cssImg/eye_close.png) no-repeat left center; ;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+
+fieldset .pwd_tips,fieldset .agreement{
+	display: block;
+	height: 45px;
+	line-height: 45px;
+	color: #A0A0A0;
+	margin:0 4%;
+	position: relative;
+	background-color:#fff;
+	border: none;
+}
+fieldset .agreement span{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background:url(../../../images/user/cssImg/no_ok.png) no-repeat left center;
+	margin-bottom: -2px;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+fieldset .agreement span.checked{
+	background:url(../../../images/user/cssImg/ok.png) no-repeat left center;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+fieldset .agreement a{
+	color:#0700c6;
+	text-decoration:none;
+}
+fieldset p {
+	border-bottom:1px solid #d8d8d8;
+	height: 45px;
+	line-height: 45px;
+	color: #999;
+	margin:0 4%;
+	position: relative;
+	background-color:#fff;
+}
+fieldset p.mobiTxt{
+	color:#555;
+}
+fieldset p label {
+	display: inline-block;
+	float: left;
+	/*margin: 0 10px 0 0;*/
+	width:24px;
+	height: 24px;
+	background:url(../../../images/user/cssImg/tel.png) no-repeat left center;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+fieldset p label.mobi{
+	background:url(../../../images/user/cssImg/tel.png) no-repeat left center;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+
+fieldset p label.mobiCode{
+	background:url(../../../images/user/cssImg/check_code.png) no-repeat left center;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+
+fieldset p label.MobiPwd{
+	background:url(../../../images/user/cssImg/password.png) no-repeat left center;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+
+
+fieldset p input[type=text], fieldset p input[type=password],fieldset p input[type=number]{
+	border: 1px solid #fff;
+	background: rgba(0,0,0,0);
+	height: 24px;
+	width: 45%;
+	z-index: 0;
+	font-size:12px;
+	padding:0 5px;
+	outline:none;
+	margin-left: 30px;
+}
+fieldset input[type=text].error, fieldset input[type=password].error {
+	border: 1px solid #0700c5;
+}
+fieldset p input[type=text].verCode{
+	width:45%;
+}

@@ -1,0 +1,29 @@
+fieldset .pwd_tips, fieldset .agreement {
+	display: block;
+	height: 45px;
+	line-height: 45px;
+	color: #A0A0A0;
+	margin: 0 4%;
+	position: relative;
+	background-color: #fff;
+	border: none;
+}
+
+.verification_box span.pwd_eyes{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 10px;
+	right: 0;
+	background:url(../../../images/user/cssImg/eye_open.png) no-repeat left center;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+.verification_box span.pwd_eyes.close{
+	background:url(../../../images/user/cssImg/eye_close.png) no-repeat left center; ;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}

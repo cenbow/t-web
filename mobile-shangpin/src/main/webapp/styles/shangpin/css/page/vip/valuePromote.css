@@ -1,0 +1,30 @@
+body {background:#F6F6F6;}
+.container { min-width: 320px; max-width: 640px; margin: 0 auto; }
+.topFix section { position: static; }
+body .alContent { margin-top: 0px; }
+.white-bg{background:#fff;}
+
+/*fClub*/
+.valuePro-box .valueTitle-box{padding:20px 20px;text-align:center;background:#2D2D2D; background-size:cover; position:relative;}
+.valuePro-box .valueTitle-box>img{width:60px;height:60px;border-radius: 50%;}
+.valuePro-box .valueTitle-box h5{font-size:12px;color:#fff;line-height:24px;font-weight:normal; margin:5px 0 15px;}
+.valuePro-box .valueTitle-box p{color:#fff;line-height:20px; font-size:12px;margin-top: 10px}
+.valuePro-box .valueTitle-box .rule-desc{ position:absolute; top:10px; right:10px;color:#ccc;line-height:20px; font-size:10px;}
+.valuePro-box .valueTitle-box .rule-desc i{display:inline-block;width:16px;height:16px;vertical-align:top; margin-top:-1px; margin-left:5px;}
+
+.valuePro-box h3{font-size: 14px;margin-left: 10px;height: 44px;line-height: 44px}
+.valuePro-box .promote_list{background: #ffffff;}
+.valuePro-box .promote_list .list_child{display:block;color:#000;float: left;width: 33.3%;text-align: center;padding:15px 0 10px 0;border-top: 1px solid #E5E5E5;border-right: 1px solid #E5E5E5;box-sizing: border-box}
+.valuePro-box .promote_list .list_child:last-child{border-right: none}
+.valuePro-box .promote_list .list_child em{display: block;width: 28px;height: 28px;margin: 0 auto}
+.valuePro-box .promote_list .list_child span{margin-top: 5px;display: block}
+
+/*会员等级说明*/
+.info_box{font-size:12px; line-height:1.5;background: #ffffff;margin-top: 5px}
+.info_child{height: 60px;border-bottom: 1px solid #E5E5E5; }
+.info_child p{overflow:hidden;color:#000;font-size:15px; font-weight:normal;float: left;margin:10px auto auto 10px;}
+.info_child p span{color: #888888;font-size: 12px}
+.info_child a{display: block;float: right;border: 1px solid #000;color: #000;width: 70px;height: 30px;line-height: 31px;text-align: center;margin:15px 10px auto auto;;font-size: 13px}
+.info_child a.checked{border: 1px solid #888;color: #888}
+
+

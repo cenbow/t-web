@@ -1,0 +1,105 @@
+@charset "utf-8";
+body { background: #fff;  max-width:640px; margin:0 auto;position:relative;}
+a:hover, a:active { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+.topFix{max-width:640px; margin:0 auto;}
+* {-webkit-tap-highlight-color: rgba(0, 0, 0, 0); margin: 0; padding: 0;}
+
+/*内容区域 end*/
+.detail_block { background: #f2f2f2; }
+/* 内容区域没查询结果start */
+.no_result { padding: 20px 0; text-align: center; }
+.no_result img { border: 0; }
+.no_result span { padding: 20px 0; font-size: 16px; line-height: 150%; color: #999; }
+.no_result img, .no_result span, .no_result a { display: block; margin: 0 auto; }
+.no_result a { width: 130px; height: 38px; line-height: 38px; background-color: #c62026; border: 1px solid #c62026; color: #fff; font-size: 14px; text-align: center; }
+.no_result a:hover { background-color: #0700c5; border: 1px solid #0700c5; color: #fff; }
+
+/* 图片轮播 */
+.scroll { position: relative; width: 290px; height: 200px; overflow: hidden; margin: 15px auto; }
+.scroll h3 { color: #555; font-size: 16px; margin-bottom: 10px; }
+.scroll .bar_list { width: 290px; height: 175px; overflow: hidden;}
+.scroll .bar_list ul {width:1600px;position:absolute;left:0;top:30px; }
+.scroll .bar_list ul li, .scroll .bar_btn ul li { float: left; }
+.scroll .bar_btn { width: 290px; height: 10px; position: absolute; bottom: 10px; left: 0; text-align: left; }
+.content_scroll { width: 290px; margin: 0 auto; padding-bottom: 14px; }
+.content_scroll p { width: 84px; height: 175px; padding-right: 17px; float: left; }
+.content_scroll p span { width: auto; height: 20px; display: block; text-align: left; }
+.content_scroll p span b { display: block; width: auto; height: 12px; color: #000; font-weight: normal;font-size: 12px;  }
+.content_scroll p a img{ border:1px solid #fff }
+.content_scroll p span em { margin-top: 6px;  height: 28px; overflow: hidden; display: block; color: #555; font-size: 10px; line-height:14px; }
+.content_scroll p a:hover span em { }
+.content_scroll p:last-child { padding-right: 0; }
+.content_scroll p a img.img-border{ border:1px solid #eee}
+
+/*优惠券*/
+
+.coupon_menu { display: -webkit-box; display: -moz-box; display: -o-box; display: box; background: #fff;}
+.coupon_menu li { height: 38px; line-height: 38px; -webkit-box-flex: 1; -moz-box-flex: 1; -o-box-flex: 1; box-flex: 1; color: #2d2d2d; text-align: center;  cursor: pointer; border-bottom:1px solid #e5e5e5; border-top:1px solid #e5e5e5;}
+.coupon_menu li.cur { background-color: #fff; color: #0700c5; }
+.coupon_block {min-height:300px;}
+.coupons_active{width:100%; height:50px; background:#f6f6f6;}
+.coupons_active h3 { font-size: 20px; color: #000; margin: 15px 0 0; }
+.coupons_active fieldset { width: 100%; padding: 7px 0 8px; }
+.coupons_active fieldset legend { color: #2d2d2d; font-size: 16px; height: 31px; line-height: 31px; display: block; width: 100%; box-sizing: border-box; }
+.coupons_active fieldset p { height: 31px; line-height: 31px; color: #999; position: relative; }
+.coupons_active fieldset p input[type=text] { border: none; background:#fff; height: 30px; z-index: 0; width:70%; font-size: 14px; padding: 0 5px; margin:0 0 0 10px; border:1px solid #e5e5e5;}
+.coupons_active fieldset p span { display: inline-block; width: 78%; color: #555; }
+.coupons_active fieldset p a.coupons_submit { position: absolute; right: 0; display: inline-block; width: 25%; height: 29px; line-height: 29px; text-align: center; font-size: 14px; color: #888; }
+/*.coupons_active fieldset p a.coupons_submited,.coupons_active fieldset p a.coupons_submit:hover, .coupons_active fieldset p a.coupons_submit:active { background-color: #0700c5; color:#fff; border: 1px solid #fff; }*/
+.coupon_list {padding:10px 10px 0px; }
+.coupon_list li { position: relative; background: #fff; border: 1px solid #fff; height: 121px; margin-bottom: 10px; }
+.coupon_list li.cash {border: 1px solid #000;}
+.coupon_list li.sale {border: 1px solid #000;}
+.coupon_list li h4 { position: absolute; left: 2px; top: 3px; z-index: 2; width:50px;}
+.coupon_list li div { text-align: center; vertical-align: top; margin: 0 75px 0 14px; }
+.coupon_list li div i { font-size: 22px; line-height: 30px; color: #000; }
+.coupon_list li div em { display: block; font-size: 14px; color: #555; border-bottom: 1px solid #e0e0e0; padding: 0 0 5px; }
+.coupon_list li div span { display: block; text-align: left; color: #888; font-size: 10px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.coupon_list li div span strong { display: block; text-align: left; line-height: 12px; font-size: 12px }
+.coupon_list li p { position: absolute; right: 0; top: 0; }
+.coupons_tips { color: #888; line-height: 160%; min-height: 80px; font-size: 12px; }
+
+.select{ display:block; width:21px; height:21px;background:url(../../images/select_Nbg.png) no-repeat 0 0;background-size:21px; position:absolute; right:24px; bottom:2px;}
+.selected{ display:block; width:21px; height:21px;background:url(../../images/select.png) no-repeat 0 0;background-size:21px; position:absolute; right:24px; bottom:2px;}
+
+/*礼品卡列表*/
+.gift_cards_list { }
+.card_balance { background: #f8f8f8; padding: 20px 10px 25px; position:relative; }
+.card_balance h2 { color: #000; font-weight: normal }
+.card_balance p { color: #0700c5; font-size: 20px; margin-top: 5px; }
+.card_balance p strong { font-size: 25px; font-weight: normal }
+.card_balance .recharge-btn{ position:absolute; right:84px; top:15px; padding:0 15px; line-height:30px; font-size:15px; color:#000; border:1px solid #000; background:#fff}
+.card_balance .buy-card-btn{ position:absolute; right:15px; top:15px; padding:0 15px; line-height:30px; font-size:15px; color:#000; border:1px solid #000; background:#fff}
+.content_info { padding-bottom: 8px; }
+.anchor { display: block; margin-top: 82px; }
+.menu-nav { width: 100%; border-bottom: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5; height: 36px; overflow: hidden; }
+.menu-nav .tab_info { width: 100%; display: table; font-size: 14px; height: 30px; }
+.tab_info li { padding-top: 6px; display: table-cell; height: 24px; line-height: 24px; text-align: center; }
+.tab_info li a { display: inline-block; color: #808080; }
+.tab_info li.curr a { color: #0700c5; padding-top: 1px; border-bottom: 1px solid #0700c5; }
+.purchase-records-list { padding: 20px; }
+.purchase-records-list li { font-size: 13px; line-height: 24px; }
+.purchase-records-list li p { float: left; color: #888 }
+.purchase-records-list li p strong { color: #2d2d2d; font-weight: normal }
+.purchase-records-list li p strong.red { color: #0700c5 }
+.purchase-records-list li span { float: right; color: #888 }
+.purchase-records-list .btn-icon { width: 100%; height: auto; padding: 10px 20px 0; box-sizing: border-box; }
+.purchase-records-list .btn-icon a { float: left; display: block; width: 48%; padding: 0 10px; box-sizing: border-box; box-sizing: border-box; background-color: #fff; border: 1px solid #ccc; height: 38px; line-height: 38px; color: #888; text-align: center; font-size: 12px; }
+.purchase-records-list .btn-icon a.recharge-btn { margin-right: 4%; }
+.line { width: 100%; height: 10px; background: #f6f6f6; border-top: 1px solid #e5e5e5; }
+.recharge-records-list { margin-top: 20px; border-top: 1px solid #edecec; }
+.recharge-records-list li { width: 100%; line-height: 45px; border-bottom: 1px solid #edecec; font-size: 13px; }
+.recharge-records-list li span { display: block; float: left; width: 25%; text-align: center; color: #7d7d7d; padding-left: 5px; box-sizing: border-box; white-space: nowrap; overflow: hidden; }
+.recharge-records-list li.first { background: #f8f8f8; }
+.consumption-records-box { padding: 20px; }
+.consumption-records-box table { width: 100%; border: 1px solid #d4d4d4; font-size: 12px; }
+.consumption-records-box table tr td, .consumption-records-box table tr th { height: 45px; padding: 0 5px; text-align: center; color: #888 }
+.consumption-records-box table tr th { background: #f8f8f8; font-weight: normal }
+.purchase-records-none,.recharge-records-none,.consumption-records-none{padding:20px; display:none; text-align:center;}
+
+/*去设置*/
+.setup{width:60%; margin:0 auto;}
+.setup .setup_img{width:50%; margin:30px auto;}
+.setup .setup_img img{width:100%;}
+.setup p{text-align:center; font-size:14px; color:#888; line-height:28px;}
+.setup .setup_button{width:123px; height:44px; margin:5px auto; display:block; background:#0700c5; color:#fff; font-size:17px; text-align:center; line-height:43px;}
